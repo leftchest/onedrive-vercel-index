@@ -1,7 +1,7 @@
 {
   "userPrincipalName": "leftchest@hncaa.cn",
   "icon": "/icons/128.png",
-  "title": "Spencer's OneDrive",
+  "title": "Leftchest's OneDrive",
   "baseDirectory": "/Public",
   "maxItems": 100,
   "googleFontSans": "Inter",
@@ -13,15 +13,12 @@
   "protectedRoutes": [
     "/Private"
   ],
-  "email": "mailto:spencer.wushangbo@gmail.com",
+  "email": "mailto:leftchest@foxmail.com",
   "links": [
-    {
-      "name": "GitHub",
-      "link": "https://github.com/spencerwooo/onedrive-vercel-index"
-    },
+
     {
       "name": "Telegram",
-      "link": "https://t.me/realSpencerWoo"
+      "link": "https://t.me/leftchest"
     }
   ]
 }
