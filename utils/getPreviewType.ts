@@ -1,5 +1,3 @@
-import { getExtension } from './getFileIcon'
-
 export const preview = {
   markdown: 'markdown',
   image: 'image',
@@ -49,15 +47,10 @@ export const extensions = {
   rs: preview.code,
   vue: preview.code,
   json: preview.code,
-  yml: preview.code,
   yaml: preview.code,
   toml: preview.code,
 
   txt: preview.text,
-  vtt: preview.text,
-  srt: preview.text,
-  log: preview.text,
-  diff: preview.text,
 
   mp4: preview.video,
   flv: preview.video,
@@ -96,28 +89,4 @@ export function getPreviewType(extension: string, flags?: { video?: boolean }): 
   }
 
   return previewType
-}
-
-export function getLanguageByFileName(filename: string): string {
-  const extension = getExtension(filename)
-  switch (extension) {
-    case 'ts':
-    case 'tsx':
-      return 'typescript'
-    case 'rs':
-      return 'rust'
-    case 'js':
-    case 'jsx':
-      return 'javascript'
-    case 'sh':
-      return 'shell'
-    case 'cs':
-      return 'csharp'
-    case 'py':
-      return 'python'
-    case 'yml':
-      return 'yaml'
-    default:
-      return extension
-  }
 }
