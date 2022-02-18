@@ -1,7 +1,3 @@
-import dayjs from 'dayjs'
-
-import siteConfig from '../config/site.config'
-
 /**
  * Convert raw bits file/folder size into a human readable string
  *
@@ -24,5 +20,12 @@ export const humanFileSize = (size: number) => {
  * @returns Human readable form of the file or folder last modified date
  */
 export const formatModifiedDateTime = (lastModifedDateTime: string) => {
-  return dayjs(lastModifedDateTime).format(siteConfig.datetimeFormat)
+  return new Date(lastModifedDateTime).toLocaleString('en-US', {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
+  })
 }
