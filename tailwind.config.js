@@ -32,13 +32,8 @@ module.exports = {
         gray: {
           850: '#222226'
         }
-      },
-      animation: {
-        'spin-slow': 'spin 5s linear infinite',
       }
     }
   },
-  plugins: [
-    require('@tailwindcss/line-clamp'),
-  ],
+  plugins: [],
 }
