@@ -85,8 +85,7 @@ export const ChildIcon: FC<{ child: OdFolderChildren }> = ({ child }) => {
   return render ? (
     <span>{emoji ? emoji[0] : '📁'}</span>
   ) : (
-    <FontAwesomeIcon icon={child.file ? getFileIcon(child.name, { video: Boolean(child.video) }) : ['far', 'folder']}/>
-    // 触发部署
+    <FontAwesomeIcon icon={child.file ? getFileIcon(child.name, { video: Boolean(child.video) }) : ['far', 'folder']} />
   )
 }
 
